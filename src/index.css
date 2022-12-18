@@ -1,13 +1,84 @@
-body {
+body{
+  font-family: "Roboto";
+
+  
+}
+.titleApp {
+  letter-spacing: 5px;
+}
+.App {
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 1px solid #a5a5a5;
+  box-shadow: 1px 10px 10px #858585;
+  border-radius: 20px;
+  width: 550px;
+  height: 100%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px 30px 30px 30px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App .item-todo {
+  padding: 14px;
+  width: 250px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 15px;
+  background: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 10px 10px #858585;
+  
+  
+}
+
+.App .item-todo .item-text {
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.App input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: #020202;
+  box-shadow: 1px 10px 10px #858585;
+  outline: none;
+  background: transparent;
+}
+
+.App button {
+  padding: 14px 6px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #4d4d4d;
+  box-shadow: 1px 10px 10px #858585;
+  color: #fff;
+  text-transform: capitalize;
+  
+}
+.App button:hover{
+  background-color: #020202;
+}
+
+.App .item-todo .item-delete {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+  position: relative;
+  left: -4px;
+  bottom: 5px;
+}
+.App .item-todo .item-delete:hover{
+  color: rgb(250, 46, 46);
+}
+.strike {
+  text-decoration: line-through;
 }
